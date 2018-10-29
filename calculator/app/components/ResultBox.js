@@ -1,20 +1,20 @@
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
 
-export class NumPad extends React.Component{
+export  class ResultBox extends React.Component{
 
 
     render(){
         return (
-            <Text style={styles.numpad}>{this.props.numpad}</Text>
+            <Text style={styles.resultbox}>{this.props.result}</Text>
         )
     }
 }
 
 const styles = StyleSheet.create({
     resultbox: {
-        flex:2,
-        backgroundColor: 'green',
+        flex:1,
+        backgroundColor: '#95a5a6',
         textAlign: 'right',
         paddingLeft:8,
         paddingRight:8,

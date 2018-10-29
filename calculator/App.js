@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
 import { Provider } from 'react-redux';
-import {ExpressionBox, ResultBox, NumPad} from './components';
+import {ExpressionBox, ResultBox, NumPad} from './app/components';
 export default class App extends React.Component {
 
     constructor(props){
@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         backgroundColor: '#fff',
-        alignItems: 'center',
         justifyContent: 'center'
      }
 })
