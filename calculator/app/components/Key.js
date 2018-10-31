@@ -10,14 +10,14 @@ export class Key extends React.Component{
     }
 
     _onPress(){
-
+        this.props.echoSymbol(this.props.symbol);
     }
 
     render(){
         return (
            <TouchableHighlight
-                style = { this.props.op ? [styles.key, styles.op ] : styles.key}
-                onPress= { this._onPress() }>
+                style = { this.props.op ? [styles.key, styles.opkey ] : styles.key}
+                onPress= { this._onPress }>
             <View>
                 <Text style = {  this.props.op ? [ styles.keyoptext ] : styles.keytext }>
                     { this.props.symbol }
@@ -42,8 +42,9 @@ const styles = StyleSheet.create({
      keytext:{
         fontSize:20,
      },
-     op:{
-        backgroundColor: '#2c3e50'
+     opkey:{
+        backgroundColor: '#2c3e50',
+        marginRight:10
      },
      keyoptext:{
          color:'#fff',
