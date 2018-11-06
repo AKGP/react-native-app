@@ -12,7 +12,7 @@ export class World extends React.Component{
         return(
             <View style={styles.world}>
                 <GoalPost style={styles.goalpost}/>
-                <Ghost />
+                <Ghost x={1} y={1}/>
                 <Ball style={styles.ball}></Ball>
             </View>
         );
@@ -25,6 +25,8 @@ const styles = StyleSheet.create({
         backgroundColor:'green'
     },
     goalpost:{
+        position:'absolute',
+        top:'40%',
         flex:1,
         justifyContent: 'center',
         alignContent:'center',

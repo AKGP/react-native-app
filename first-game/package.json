@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "launch":"react-native run-android"
   },
   "dependencies": {
     "mathjs": "^5.2.2",
