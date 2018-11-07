@@ -2,7 +2,7 @@ import React from 'react';
 // import { View, Text, StyleSheet} from 'react-native';
 // import { Provider } from 'react-redux';
 import {World} from './app/components';
-import {Animate1} from './app/tutorial-components/Animate-1';
+import {Animate2} from './app/tutorial-components/Animate-2';
 // import { Loop, Stage, World, Body, Sprite, TileMap} from 'react-game-kit/native';
 // const math = require('mathjs');
 
@@ -14,8 +14,7 @@ export default class App extends React.Component {
 
     render(){
         return (     
-        //    <World/>
-           <Animate1/>
+           <Animate2/>
         );
     }
 }
